@@ -1,0 +1,9 @@
+img {
+    width: 30%;
+    height: auto;
+    transition: opacity 5s ease;
+}
+
+button {
+    width: 30%;
+}
