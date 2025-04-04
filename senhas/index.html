@@ -7,16 +7,16 @@
 </head>
 <body>
     <h1>Cadastro</h1>
-    <form action="">
-        <label for="">Digite seu nome</label>
+    <form action="" id="formulario"> <!-- Formulário de cadastro -->
+        <label for="">Digite seu nome</label> <!-- Campo para o usuário digitar seu nome -->
         <input type="text" id="nome">
-        <label for="">Digite sua senha:</label>
-        <label for="">Sua senha deve ter no mínimo 7 caracteres! </label>
-        <p>Comprimento da senha: <span id="tamanho"></span></p>
-        <input type="text" id="senha" onkeyup="valida()">
-        <span id="mensagem"></span>
-        <button type="button">enviar</button>
+        <label for="">Digite sua senha:</label> <!-- Instrução para o campo de senha -->
+        <label for="">Sua senha deve ter no mínimo 7 caracteres! </label> <!-- Instrução adicional informando a política de senha mínima -->
+        <p>Comprimento da senha: <span id="tamanho"></span></p> <!-- Parágrafo que exibirá o comprimento da senha à medida que é digitada -->
+        <input type="text" id="senha" onkeyup="valida()"> <!-- Campo de entrada de texto para a senha com um evento 'onkeyup' que chama a função 'valida()' sempre que uma tecla é pressionada --> <!-- onkeyup funciona só quando for clicar em uma tecla -->
+        <span id="mensagem"></span> <!-- Local onde será exibida a mensagem de status da senha -->
+        <button type="button" id="botao" onclick="alerta()">Enviar</button> <!-- Botão de envio do formulário, que ao ser clicado chama a função 'alerta()' -->
     </form>
-        <script src="script.js"></script>
+    <script src="script.js"></script>    <!-- Inclusão do arquivo JavaScript externo que contém as funções 'valida()' e 'alerta()' -->
 </body>
 </html>
